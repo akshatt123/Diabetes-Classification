@@ -1,0 +1,134 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2C3E50, #4A4E69);
+    color: #EAE0D5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Design */
+.container {
+    width: 45%;
+    background: rgba(52, 73, 94, 0.9); /* Deep Charcoal */
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Headings */
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #C49A6C; /* Warm Gold */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #EAE0D5;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #EAE0D5;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+    border: 1px solid #C49A6C; /* Gold Focus Border */
+}
+
+/* Button Styles */
+button {
+    padding: 12px;
+    background: linear-gradient(90deg, #8E3B46, #C49A6C);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #C49A6C, #8E3B46);
+    transform: scale(1.05);
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #C49A6C;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Link Button */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px;
+    background: linear-gradient(90deg, #4A4E69, #22223B);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background: linear-gradient(90deg, #22223B, #4A4E69);
+    transform: scale(1.05);
+}
